@@ -1,0 +1,43 @@
+@import "../../Styles/@mixins.sass"
+
+.response__backdrop
+    background: rgba(0, 0, 0, .65)
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 10
+    width: 100%
+    height: 100%
+    display: none
+    justify-content: center
+    align-items: center
+
+.response__backdrop_opened
+    display: flex
+
+.response__container
+    background: #ECECEC
+    border-radius: 10px
+    max-width: 645px
+    width: 100%
+    height: 339px
+    padding: 72px 58px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+.response__title
+    margin-bottom: 25px
+    @include heading-h2
+    max-width: 408px
+    text-align: center
+
+@media screen and (max-width: 450px)
+    .response__container
+        max-width: 254px
+
+
+    .response__title
+        font-size: 24px

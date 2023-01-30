@@ -1,0 +1,69 @@
+@import "../../Styles/@mixins.sass"
+
+.aboutUs
+    margin: 0 auto
+    margin-top: 128px
+
+.aboutUs__content
+    display: flex
+    margin: 0 auto
+    width: 100%
+    gap: 35px
+
+.aboutUs__title
+    @include heading-h2
+
+.aboutUs__description
+    @include text-26R
+    margin: 20px 0
+
+.aboutUs__img
+    max-height: 458px
+    border-radius: 15px
+    object-fit: contain
+
+@media screen and (max-width: 1300px)
+
+    .aboutUs__img
+        width: 600px
+
+@media screen and (max-width: 1200px)
+.aboutUs
+    padding: 0 20px 0
+
+@media screen and (max-width: 1160px)
+    .aboutUs__content
+        gap: 19px
+    .aboutUs__description
+        @include text-22R
+
+    .aboutUs__img
+        width: 500px
+
+@media screen and (max-width: 970px)
+    .aboutUs
+        margin-top: 64px
+    .aboutUs__title
+        text-align: center
+        @include heading-h2-tablet
+    .aboutUs__content
+        flex-direction: column
+
+    .aboutUs__img
+        width: 100%
+    .aboutUs__button
+        padding-top: 27px
+        text-align: center
+
+    .aboutUs__description
+        @include date-20R
+
+@media screen and (max-width: 400px)
+    .aboutUs
+        margin-top: 32px
+    .aboutUs__title
+        @include heading-h2-mobile
+    .aboutUs__description
+        @include date-16R
+        margin: 12px 0
+

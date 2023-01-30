@@ -1,0 +1,34 @@
+@import "../../Styles/@mixins.sass"
+
+.eventsPage
+    margin: 100px auto 0
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    max-width: 1320px
+
+.eventsPage__heading
+    text-align: center
+    
+.eventsPage__heading-link
+    @include text-20B
+    border-bottom: 2px solid #0FDACE
+
+.eventsPage__title
+    @include heading-h2
+    text-align: center
+    margin-top: 41px
+
+.eventsPage__card-container
+    display: grid
+    gap: 50px
+    margin: 41px auto 30px
+    max-width: 1200px
+
+.eventsPage__pagination
+    display: flex
+    justify-content: center
+
+@media screen and (max-width: 1200px)
+    .eventsPage__card-container
+        max-width: 800px

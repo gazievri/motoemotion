@@ -1,0 +1,31 @@
+@import "../../Styles/@mixins.sass"
+
+.header
+    width: 100%
+    background: #383838
+    color: #fff
+
+.header__content
+    margin: 0 auto
+    max-width: 1320px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 24px 0
+
+.header__logo
+    color: #fff
+    @include logo-text
+
+@media screen and (max-width: 1360px)
+    .header__content
+        padding: 28px 30px
+
+@media screen and (max-width: 450px)
+    .header
+        position: fixed
+        z-index: 10
+
+    .header__logo
+        font-size: 22px

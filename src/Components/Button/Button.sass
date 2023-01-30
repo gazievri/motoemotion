@@ -1,0 +1,41 @@
+@import "../../Styles/@mixins.sass"
+
+.button
+    height: 61px
+    background: #0FDACE
+    border-radius: 15px
+    @include text-20B
+    transition: 0.3s
+
+.button:hover
+    background: #14FFF1
+
+.button:active
+    background: #09BCB1
+
+.button:disabled
+    background: #9E9E9E
+
+.button:hover:disabled
+    background: #9E9E9E
+
+// Кнопка с прозрачным фоном
+.button_type_transparent
+    height: 61px
+    border: 1px solid #0FDACE
+    background: transparent
+    border-radius: 15px
+    @include text-20B
+    transition: 0.3s
+
+.button_type_transparent:hover
+    background: rgba(20, 255, 241, 0.1)
+
+.button_type_transparent:active
+    background: rgba(9, 188, 177, 0.5)
+
+.button_type_transparent:disabled
+    background: #D9D9D9
+
+.button_type_transparent:hover:disabled
+    background: #D9D9D9

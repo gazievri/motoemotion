@@ -1,0 +1,96 @@
+@keyframes burger-popup-opening
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.burgerButton
+  display: block
+  width: 30px
+  height: 20px
+  position: relative
+
+.burgerButton span
+  position: absolute
+  width: 100%
+  height: 2px
+  background-color: #0FDACE
+  top: 9px
+  right: 0
+  transition: ease-in 0.5s
+
+.burgerButton::before, .burgerButton::after
+  content: ""
+  position: absolute
+  width: 100%
+  height: 2px
+  background-color: #0FDACE
+  left: 0
+  transition: ease-in 0.3s
+
+.burgerButton::after
+  bottom: 0
+
+.burgerButton::before
+  top: 0
+
+.burgerButton.active::before
+  transform: rotate(315deg)
+  top: 9px
+
+.burgerButton.active::after
+  bottom: 9px
+  transform: rotate(-315deg)
+
+.burgerButton.active span
+  display: none
+
+.burger
+  position: absolute
+  top: -500px
+  display: none
+
+.burger_opened
+  display: flex
+  top: 79px
+  right: 0
+  left: 0
+  bottom: 0
+  z-index: 6
+  animation-name: burger-popup-opening
+  animation-duration: 0.2s
+
+.burger__container
+  padding-left: 10%
+  background-color: #383838
+  width: 100vw
+  height: 100vh
+  position: relative
+  display: flex
+  padding-top: 80px
+  flex-direction: column
+
+.burger__socials
+  height: 34px
+  display: flex
+  gap: 27px
+  margin-top: 28px
+.burger__link
+  display: block
+  width: 36px
+  background-color: white
+
+.burger__link_type_vk
+  -webkit-mask-image: url('../../assets/icons/Footer/vk.svg')
+
+.burger__link_type_wa
+  -webkit-mask-image: url('../../assets/icons/Footer/whatsapp.svg')
+  width: 34px
+
+.burger__link_type_tg
+  -webkit-mask-image: url('../../assets/icons/Footer/telegram.svg')
+  width: 34px
+
+@media screen and (max-width: 999px)
+  .BurgerButton
+    margin-right: 0

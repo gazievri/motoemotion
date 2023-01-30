@@ -1,0 +1,15 @@
+@import "../../Styles/@mixins.sass"
+.navigation
+    display: flex
+
+.navigation__navLink
+    color: #fff
+    @include header-link
+
+.navigation__navLink:not(:last-of-type)
+    padding-right: 32px
+
+@media screen and (max-width: 950px)
+    .navigation
+        flex-direction: column
+        gap: 24px

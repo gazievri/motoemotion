@@ -1,0 +1,52 @@
+.friendItem
+    background-color: #fff
+    overflow: hidden
+    max-width: 305px
+    width: 100%
+    background-color: #f2f2f2
+    margin-bottom: 33px
+
+.friendItem__image-container
+    width: 100%
+    // height: 298px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    flex-direction: column
+    height: 298px
+
+.friendItem__img
+    border-radius: 20%
+    width: 100%
+    height: 100%
+
+.friendItem__title
+    margin-top: 10px
+    text-align: center
+    font-size: 22px
+
+@media screen and (max-width: 1300px)
+    .friendItem
+        max-width: 250px
+        margin: 0 auto 23px
+
+    .friendItem__image-container
+        height: 250px
+
+@media screen and (max-width: 1100px)
+    .friendItem
+        max-width: 194px
+    .friendItem__image-container
+        height: 194px
+
+@media screen and (max-width: 450px)
+    .friendItem
+        max-width: 150px
+        margin-bottom: 23px
+
+    .friendItem__image-container
+        width: 100%
+        height: 150px
+
+    .friendItem__title
+        font-size: 16px

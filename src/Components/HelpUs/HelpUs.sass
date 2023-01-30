@@ -1,0 +1,72 @@
+@import "../../Styles/@mixins.sass"
+
+.helpUs
+    margin: 0 auto
+    margin-top: 128px
+
+.helpUs__content
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    width: 100%
+    gap: 36px
+
+.helpUs__item
+    max-width: 420px
+    width: 100%
+
+.helpUs__title
+    @include heading-h2
+
+.helpUs__list
+    display: flex
+    gap: 34px
+
+.helpUs__item-title
+    @include text-26
+    padding-bottom: 11px
+
+.helpUs__item-text
+    @include text-26R
+
+@media screen and (max-width: 1350px)
+    .helpUs
+        padding: 0 20px
+
+@media screen and (max-width: 1250px)
+    .helpUs
+        gap: 20px
+        padding: 0 20px
+
+    .helpUs__list
+        display: flex
+        gap: 20px
+
+@media screen and (max-width: 1100px)
+    .helpUs__item
+        max-width: 560px
+    .helpUs__img
+        margin: 0 auto
+    .helpUs__title
+
+        font-size: 22px
+    .helpUs__item-title
+        @include text-22
+        padding-bottom: 11px
+        text-align: center
+    .helpUs__item-text
+        @include text-20
+    .helpUs__content
+        gap: 32px
+        align-items: center
+
+    .helpUs__list
+        gap: 56px
+        flex-direction: column
+        align-items: center
+
+    .helpUs__img
+        width: 70px
+
+    .pluses__item-title
+        @include text-18

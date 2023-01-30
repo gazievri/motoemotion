@@ -1,0 +1,50 @@
+@import "../../Styles/@mixins.sass"
+
+.eventCard
+    width: 305px
+    gap: 10px
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    padding-bottom: 23px
+    margin: 0 auto 0
+
+.eventCard__image-container
+    width: 100%
+    height: 372px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    border-radius: 10px
+    max-width: 305px
+
+.eventCard__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+.eventCard__date
+    @include date-20R
+
+.eventCard__title
+    @include heading-h3SB
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -moz-box
+    -moz-box-orient: vertical
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+    line-clamp: 1
+    box-orient: vertical
+
+@media screen and (max-width: 900px)
+    .eventCard
+        margin: 0 auto 0
+
+@media screen and (max-width: 400px)
+    .eventCard
+        width: 256px
+
+    .eventCard__image-container
+        height: 312px

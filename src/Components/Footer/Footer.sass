@@ -1,0 +1,91 @@
+@import "../../Styles/@mixins.sass"
+    
+.footer
+    width: 100%
+    background: rgba(15, 218, 206, 0.25)
+    height: 357px
+    margin-top: 128px
+    min-width: 320px
+
+.footer__wrapper
+    margin: 0 auto
+    max-width: 1320px
+    width: 100%
+    padding-top: 38px
+    display: flex
+    flex-direction: column
+    gap: 32px
+
+.footer__title
+    @include heading-h3
+
+.footer__content
+    width: 100%
+    display: flex
+    justify-content: space-between
+    
+.footer__content-block
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+.footer__block-title
+    @include heading-h4
+
+.footer__list
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+.footer__social-list
+    display: flex
+    gap: 21px
+
+.footer__vk
+    background-image: url('../../assets/icons/Footer/vk.svg')
+    background-size: 37px 33px
+    width: 37px
+    height: 33px
+
+.footer__tg
+    background-image: url('../../assets/icons/Footer/telegram.svg')
+    background-size: 33px 33px
+    width: 33px
+    height: 33px
+
+.footer__wa
+    background-image: url('../../assets/icons/Footer/whatsapp.svg')
+    background-size: 33px 33px
+    width: 33px
+    height: 33px
+
+.footer__block-title_type_logo
+    display: flex
+    height: 24px
+
+.footer__block-title_type_logo::after
+    content: url('../../assets/icons/Footer/logo-god.svg')
+    margin-left: 10px
+    display: inline
+
+@media screen and (max-width: 1375px)
+    .footer__wrapper
+        padding: 38px 45px 0
+
+@media screen and (max-width: 845px)
+    .footer
+        height: fit-content
+    .footer__content
+        flex-wrap: wrap
+        gap: 32px
+    .footer__wrapper
+        padding-bottom: 62px
+
+@media screen and (max-width: 650px)
+    .footer__content
+        flex-direction: column
+    .footer__wrapper
+        padding: 38px 32px 62px
+    .footer__policy
+        max-width: 256px
+        display: block

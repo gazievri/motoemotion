@@ -1,0 +1,42 @@
+@import "../../Styles/@mixins.sass"
+
+.mainPage
+    margin: 0 auto
+    max-width: 1320px
+    flex-grow: 1
+
+.mainPage__title
+    @include heading-h2
+    
+
+.mainPage__content
+    display: flex
+    flex-direction: column
+    margin: 128px auto 0
+    width: 100%
+    gap: 35px
+
+.mainPage__content-header
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    width: 100%
+    align-items: center
+
+.mainPage__button
+    @include date-20R
+    border-bottom: 2px solid #0FDACE
+
+@media screen and (max-width: 1350px)
+    .mainPage__content
+        padding: 0 20px 0
+
+@media screen and (max-width: 1200px)
+    .mainPage__content
+        padding: 0 20px 0
+
+@media screen and (max-width: 600px)
+
+    .mainPage__content-header
+        gap: 10px
+        flex-direction: column

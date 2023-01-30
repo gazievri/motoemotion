@@ -1,0 +1,35 @@
+@import "../../Styles/@mixins"
+
+.pagination
+  display: flex
+  flex-wrap: nowrap
+  gap: 15px
+  @include text-18
+  align-items: center
+
+.pagination__pages-block
+  display: flex
+  flex-wrap: nowrap
+  gap: 20px
+  @include text-18
+
+.pagination__page
+  @include text-18
+
+.pagination__page_active
+  color: #0FDACE
+  @include text-18
+
+.pagination__page-prev
+  background-image: url('./icons/prev.svg')
+  background-size: 9px 18px
+  background-position: center
+  width: 9px
+  height: 18px
+
+.pagination__page-next
+  background-image: url('./icons/next.svg')
+  background-size: 9px 18px
+  background-position: center
+  width: 9px
+  height: 18px
